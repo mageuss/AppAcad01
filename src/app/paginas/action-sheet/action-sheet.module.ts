@@ -4,19 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MenuPrincipalPageRoutingModule } from './menu-principal-routing.module';
+import { ActionSheetPageRoutingModule } from './action-sheet-routing.module';
 
-import { MenuPrincipalPage } from './menu-principal.page';
+import { ActionSheetPage } from './action-sheet.page';
 import { ComponentsModule } from 'src/app/components/components.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MenuPrincipalPageRoutingModule,
+    ActionSheetPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [MenuPrincipalPage]
+  declarations: [ActionSheetPage]
 })
-export class MenuPrincipalPageModule {}
+export class ActionSheetPageModule {}

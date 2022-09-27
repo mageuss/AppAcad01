@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MenuPrincipalPageRoutingModule } from './menu-principal-routing.module';
+import { AlertPageRoutingModule } from './alert-routing.module';
 
-import { MenuPrincipalPage } from './menu-principal.page';
+import { AlertPage } from './alert.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    MenuPrincipalPageRoutingModule,
+    AlertPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [MenuPrincipalPage]
+  declarations: [AlertPage]
 })
-export class MenuPrincipalPageModule {}
+export class AlertPageModule {}

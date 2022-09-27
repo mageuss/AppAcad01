@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { FinanceiroPageRoutingModule } from './financeiro-routing.module';
 
 import { FinanceiroPage } from './financeiro.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FinanceiroPageRoutingModule
+    FinanceiroPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [FinanceiroPage]
 })
