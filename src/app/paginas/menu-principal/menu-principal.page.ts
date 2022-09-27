@@ -7,9 +7,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuPrincipalPage implements OnInit {
 
+  componentes: Componente[] = [
+    {
+      icone: 'imagem',
+      nome: 'Dados Pessoais',
+      link: '/dados-pessoais'
+    },
+
+    {
+      icone: 'imagem',
+      nome: 'Financeiro',
+      link: '/financeiro'
+    },
+    {
+      icone: 'imagem',
+      nome: 'Notas',
+      link: '/notas'
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }
+
+interface Componente {
+  icone: string;
+  nome: string;
+  link: string
+}
+
