@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-menu-principal',
@@ -25,8 +26,14 @@ export class MenuPrincipalPage implements OnInit {
       link: '/notas'
     }
   ];
+  
+  close(){
+    this.platform.backButton.subscribe( () => {
+      navigator['app'].exitApp();
+      })
+  }
 
-  constructor() { }
+  constructor(private platform: Platform) { }
 
   ngOnInit() {
   }
@@ -37,4 +44,5 @@ interface Componente {
   nome: string;
   link: string
 }
+
 
